@@ -18,7 +18,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: 1.23.0
+          go-version: 1.23.3
           cache: false
 
       - name: Run Dagger pipeline
@@ -27,4 +27,4 @@ jobs:
           workdir: go
           verb: run
           args: go run pipeline.go
-          version: "0.12.7"
+          version: "0.14.0"
